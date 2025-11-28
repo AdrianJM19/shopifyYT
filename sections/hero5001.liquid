@@ -22,13 +22,13 @@
     {
       "type": "text",
       "id": "button_text_1",
-      "label": "Texto Botón 1",
+      "label": "Texto Botón",
       "default": "VER PORTÁTILES"
     },
     {
       "type": "url",
       "id": "button_link_1",
-      "label": "Enlace Botón 1"
+      "label": "Enlace Botón"
     },
     {
       "type": "range",
@@ -53,10 +53,10 @@
   .alienware-hero {
     position: relative;
     width: 100%;
-    height: 600px; /* Altura fija para impacto visual */
+    height: 600px;
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: flex-start; /* Alinea a la izquierda */
+    align-items: center;
+    justify-content: flex-start;
     overflow: hidden;
     color: white;
   }
@@ -76,7 +76,6 @@
     object-fit: cover;
   }
 
-  /* Gradiente oscuro estilo Alienware/Gaming */
   .alienware-overlay {
     position: absolute;
     top: 0;
@@ -90,17 +89,17 @@
   .alienware-content {
     position: relative;
     z-index: 3;
-    padding-left: 5%; /* Espacio desde la izquierda */
-    max-width: 600px; /* Que el texto no se estire demasiado */
+    padding-left: 5%;
+    max-width: 600px;
   }
 
   .alienware-title {
-    font-size: 3.5rem; /* Texto Gigante */
+    font-size: 3.5rem;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: 20px;
-    font-family: 'Arial', sans-serif; /* O la fuente de tu tema */
+    font-family: sans-serif;
     letter-spacing: 1px;
   }
 
@@ -113,13 +112,13 @@
 
   .alienware-btn {
     display: inline-block;
-    background-color: #005BD3; /* Tu color azul */
+    background-color: #005BD3;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 4px; /* Un poco cuadrado */
+    border-radius: 2px;
     transition: background 0.3s;
   }
 
@@ -127,7 +126,6 @@
     background-color: #004499;
   }
 
-  /* Versión Móvil */
   @media (max-width: 768px) {
     .alienware-hero {
       height: 450px;
@@ -139,7 +137,7 @@
       padding-right: 20px;
     }
     .alienware-overlay {
-      background: rgba(0,0,0,0.6); /* En móvil oscurecemos todo parejo */
+      background: rgba(0,0,0,0.6);
     }
     .alienware-title {
       font-size: 2.2rem;
@@ -148,7 +146,6 @@
 </style>
 
 <div class="alienware-hero">
-  
   <div class="alienware-bg">
     {% if section.settings.bg_image != blank %}
       <img 
@@ -173,5 +170,4 @@
       </a>
     {% endif %}
   </div>
-
 </div>
