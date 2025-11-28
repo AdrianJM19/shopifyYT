@@ -1,0 +1,190 @@
+{% schema %}
+{
+  "name": "Tarjetas Alienware",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tarjeta Izquierda"
+    },
+    {
+      "type": "collection",
+      "id": "collection_1",
+      "label": "Colección 1"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Título Personalizado 1",
+      "default": "AREA-51"
+    },
+    {
+      "type": "text",
+      "id": "desc_1",
+      "label": "Descripción 1",
+      "default": "La experiencia gaming definitiva."
+    },
+    {
+      "type": "color",
+      "id": "color_1",
+      "label": "Color del Degradado 1",
+      "default": "#240090"
+    },
+    {
+      "type": "header",
+      "content": "Tarjeta Derecha"
+    },
+    {
+      "type": "collection",
+      "id": "collection_2",
+      "label": "Colección 2"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Título Personalizado 2",
+      "default": "AURORA"
+    },
+    {
+      "type": "text",
+      "id": "desc_2",
+      "label": "Descripción 2",
+      "default": "Versatilidad para gaming de primer nivel."
+    },
+    {
+      "type": "color",
+      "id": "color_2",
+      "label": "Color del Degradado 2",
+      "default": "#111111"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tarjetas Alienware"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .aw-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .aw-card {
+    position: relative;
+    height: 500px; /* Altura de la tarjeta */
+    border-radius: 20px; /* Bordes redondeados como la foto */
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+
+  /* IMAGEN DE FONDO */
+  .aw-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Efecto suave */
+  }
+
+  /* EL DEGRADADO MÁGICO */
+  .aw-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%; /* Ocupa el 70% de abajo hacia arriba */
+    z-index: 2;
+    /* Esto se llena con JS/Liquid dinámicamente */
+  }
+
+  /* TEXTO */
+  .aw-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 20px;
+    z-index: 3;
+    text-align: center;
+    color: white;
+  }
+
+  .aw-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+  }
+
+  .aw-desc {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 400;
+    margin: 0;
+    max-width: 80%;
+    margin: 0 auto; /* Centrado */
+  }
+
+  /* HOVER EFFECT (INTERACCIÓN) */
+  .aw-card:hover img {
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+  }
+  
+  .aw-card:hover .aw-title {
+    text-shadow: 0 0 20px rgba(255,255,255,0.5); /* Brillo en texto */
+  }
+
+  /* MÓVIL */
+  @media (max-width: 768px) {
+    .aw-grid {
+      grid-template-columns: 1fr; /* Una columna */
+      padding: 20px;
+    }
+    .aw-card {
+      height: 350px;
+    }
+  }
+</style>
+
+<div class="aw-grid">
+  
+  <a href="{{ section.settings.collection_1.url }}" class="aw-card">
+    {% if section.settings.collection_1.image %}
+      <img src="{{ section.settings.collection_1.image | image_url: width: 1000 }}" loading="lazy" alt="{{ section.settings.title_1 }}">
+    {% else %}
+      {{ 'collection-1' | placeholder_svg_tag }}
+    {% endif %}
+    
+    <div class="aw-gradient" style="background: linear-gradient(to top, {{ section.settings.color_1 }} 10%, transparent 100%);"></div>
+    
+    <div class="aw-content">
+      <h3 class="aw-title">{{ section.settings.title_1 }}</h3>
+      <p class="aw-desc">{{ section.settings.desc_1 }}</p>
+    </div>
+  </a>
+
+  <a href="{{ section.settings.collection_2.url }}" class="aw-card">
+    {% if section.settings.collection_2.image %}
+      <img src="{{ section.settings.collection_2.image | image_url: width: 1000 }}" loading="lazy" alt="{{ section.settings.title_2 }}">
+    {% else %}
+      {{ 'collection-2' | placeholder_svg_tag }}
+    {% endif %}
+
+    <div class="aw-gradient" style="background: linear-gradient(to top, {{ section.settings.color_2 }} 10%, transparent 100%);"></div>
+
+    <div class="aw-content">
+      <h3 class="aw-title">{{ section.settings.title_2 }}</h3>
+      <p class="aw-desc">{{ section.settings.desc_2 }}</p>
+    </div>
+  </a>
+
+</div>
