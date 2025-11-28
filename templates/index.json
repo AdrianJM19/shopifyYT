@@ -118,6 +118,9 @@
       "block_order": [
         "ai_gen_block_de9720c_b3NVNW"
       ],
+      "custom_css": [
+        ".ai-product-carousel__title-azwznagxheuxutefrmaigenblockde9720cb3nvnw {font-size: 32px; color: #000000; margin: 0 0 30px; font-weight: bold;}"
+      ],
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
