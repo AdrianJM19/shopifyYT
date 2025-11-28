@@ -225,7 +225,9 @@
           ]
         }
       },
-      "custom_css": [],
+      "custom_css": [
+        "/* Atacamos a todas las imágenes de esa sección */img {width: 100% !important; height: 200px !important; /* Aquí controlas el tamaño: 200px es pequeño/elegante */ object-fit: contain !important; /* Muestra la laptop entera */ background-color: transparent !important; /* O #fff si quieres fondo blanco */}"
+      ],
       "name": "Featured collection",
       "settings": {
         "collection": "all",
