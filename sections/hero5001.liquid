@@ -1,0 +1,177 @@
+{% schema %}
+{
+  "name": "Hero Alienware",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Imagen de Fondo"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título Principal",
+      "default": "PORTÁTILES GAMING"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subtítulo",
+      "default": "Rendimiento extremo para jugadores exigentes."
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "label": "Texto Botón 1",
+      "default": "VER PORTÁTILES"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Enlace Botón 1"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "label": "Oscuridad del Fondo",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Alienware"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .alienware-hero {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Altura fija para impacto visual */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    overflow: hidden;
+    color: white;
+  }
+
+  .alienware-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .alienware-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Gradiente oscuro estilo Alienware/Gaming */
+  .alienware-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+  }
+
+  .alienware-content {
+    position: relative;
+    z-index: 3;
+    padding-left: 5%; /* Espacio desde la izquierda */
+    max-width: 600px; /* Que el texto no se estire demasiado */
+  }
+
+  .alienware-title {
+    font-size: 3.5rem; /* Texto Gigante */
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* O la fuente de tu tema */
+    letter-spacing: 1px;
+  }
+
+  .alienware-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    opacity: 0.9;
+  }
+
+  .alienware-btn {
+    display: inline-block;
+    background-color: #005BD3; /* Tu color azul */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px; /* Un poco cuadrado */
+    transition: background 0.3s;
+  }
+
+  .alienware-btn:hover {
+    background-color: #004499;
+  }
+
+  /* Versión Móvil */
+  @media (max-width: 768px) {
+    .alienware-hero {
+      height: 450px;
+      justify-content: center;
+      text-align: center;
+    }
+    .alienware-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .alienware-overlay {
+      background: rgba(0,0,0,0.6); /* En móvil oscurecemos todo parejo */
+    }
+    .alienware-title {
+      font-size: 2.2rem;
+    }
+  }
+</style>
+
+<div class="alienware-hero">
+  
+  <div class="alienware-bg">
+    {% if section.settings.bg_image != blank %}
+      <img 
+        src="{{ section.settings.bg_image | image_url: width: 2000 }}" 
+        alt="{{ section.settings.heading }}"
+        loading="eager"
+      >
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag }}
+    {% endif %}
+  </div>
+
+  <div class="alienware-overlay" style="opacity: {{ section.settings.overlay_opacity }}%;"></div>
+
+  <div class="alienware-content">
+    <h2 class="alienware-title">{{ section.settings.heading }}</h2>
+    <p class="alienware-subtitle">{{ section.settings.subheading }}</p>
+    
+    {% if section.settings.button_text_1 != blank %}
+      <a href="{{ section.settings.button_link_1 }}" class="alienware-btn">
+        {{ section.settings.button_text_1 }}
+      </a>
+    {% endif %}
+  </div>
+
+</div>
