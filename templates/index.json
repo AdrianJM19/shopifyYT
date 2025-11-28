@@ -26,13 +26,13 @@
       "name": "Tarjetas Alienware",
       "settings": {
         "collection_1": "gaming",
-        "title_1": "AREA-51",
+        "title_1": "GAMING",
         "desc_1": "La experiencia gaming definitiva.",
-        "color_1": "#240090",
+        "color_1": "#000000",
         "collection_2": "productividad",
         "title_2": "PRODUCTIVIDAD",
         "desc_2": "Versatilidad para gaming de primer nivel.",
-        "color_2": "#111111"
+        "color_2": "#1d3686"
       }
     },
     "product_list_fa6P9H": {
