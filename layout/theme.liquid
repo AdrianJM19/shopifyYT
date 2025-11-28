@@ -65,22 +65,5 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
-    <script>
-  // Script de Autoplay Universal para Carruseles
-  document.addEventListener("DOMContentLoaded", function() {
-    setInterval(function() {
-      // Buscamos cualquier botón de "Siguiente" que sea de un slider
-      // Nota: Horizon suele usar la clase .slider-button--next o .swiper-button-next
-      var flechas = document.querySelectorAll('.slider-button--next, .swiper-button-next, [name="next"]');
-      
-      flechas.forEach(function(flecha) {
-        // Verificamos si la flecha es visible en la pantalla
-        if (flecha && !flecha.disabled && flecha.offsetParent !== null) {
-          flecha.click(); // ¡Clic automático!
-        }
-      });
-    }, 4000); // Se mueve cada 4 segundos
-  });
-</script>
   </body>
 </html>
