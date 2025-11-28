@@ -882,3 +882,27 @@
   ]
 }
 {% endschema %}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Configuración: Tiempo en milisegundos (3000 = 3 segundos)
+    var tiempo = 3000;
+    
+    // Buscamos el contenedor de ESTA sección específica
+    var seccion = document.querySelector('#shopify-section-{{ section.id }}');
+    
+    if(seccion){
+      setInterval(function() {
+        // Buscamos el botón de "Siguiente" dentro de esta sección
+        var flechaSiguiente = seccion.querySelector('.slider-button--next');
+        
+        // Si existe la flecha (porque hay carrusel activo), le damos click
+        if (flechaSiguiente && !flechaSiguiente.disabled) {
+          flechaSiguiente.click();
+        } else {
+          // Opcional: Si llega al final y se deshabilita, podrías intentar volver al inicio
+          // pero el carrusel de Shopify suele ser infinito o tener tope.
+        }
+      }, tiempo);
+    }
+  });
+</script>
