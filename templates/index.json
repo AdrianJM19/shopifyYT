@@ -226,8 +226,7 @@
         }
       },
       "custom_css": [
-        "/* Forzar que todas las imágenes sean cuadradas */.card__media, .media {aspect-ratio: 1 / 1 !important; padding-bottom: 0 !important; /* Resetea estilos raros del tema */}",
-        "/* Ajustar la imagen dentro del cuadro */.card__media img, .media img {object-fit: contain !important; /* 'contain' muestra toda la laptop sin cortar */ width: 100% !important; height: 100% !important; background-color: #fff; /* Rellena con blanco los espacios vacíos */}"
+        "/* Atacar cualquier imagen DENTRO del carrusel que encontraste */.resource-list__carousel img {height: 250px !important; /* Fuerza la altura fija */ width: 100% !important; /* Que ocupe el ancho disponible */ object-fit: contain !important; /* Que la imagen entre completa sin cortarse */ background-color: #fff; /* Fondo blanco para rellenar huecos */}"
       ],
       "name": "Featured collection",
       "settings": {
