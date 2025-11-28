@@ -68,7 +68,7 @@
             "image_background": "#f5f5f5",
             "badge_background": "#000000",
             "badge_text_color": "#ffffff",
-            "hover_shadow_color": "#00000020",
+            "hover_shadow_color": "#00000021",
             "section_padding_top": 60,
             "section_padding_bottom": 60
           },
@@ -90,7 +90,7 @@
         "section_width": "full-width",
         "section_height": "small",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-7cdc9774-8828-49ea-805a-c8a242011332",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
