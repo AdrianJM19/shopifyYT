@@ -81,7 +81,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Take a look behind the scenes of our latest product launch.</p>",
+                "text": "",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -107,7 +107,7 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "Discover the collection",
+                "label": "",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
