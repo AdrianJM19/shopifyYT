@@ -23,12 +23,15 @@
     },
     "coleccionmaestra_d3px78": {
       "type": "coleccionmaestra",
+      "disabled": true,
       "name": "Alienware Master Tab",
       "settings": {
         "title_1": "AREA-51",
+        "desc_1": "Rendimiento extremo.",
         "collection_1": "gaming",
         "color_1": "#3b0087",
         "title_2": "AURORA",
+        "desc_2": "Versatilidad total.",
         "collection_2": "productividad",
         "color_2": "#000000",
         "limit": 4
@@ -36,7 +39,6 @@
     },
     "collecionpro_nchqKc": {
       "type": "collecionpro",
-      "disabled": true,
       "custom_css": [],
       "name": "Tarjetas Alienware",
       "settings": {
