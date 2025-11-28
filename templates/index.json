@@ -21,8 +21,23 @@
         "overlay_opacity": 45
       }
     },
+    "coleccionmaestra_d3px78": {
+      "type": "coleccionmaestra",
+      "name": "Alienware Master Tab",
+      "settings": {
+        "title_1": "AREA-51",
+        "collection_1": "gaming",
+        "color_1": "#3b0087",
+        "title_2": "AURORA",
+        "collection_2": "productividad",
+        "color_2": "#000000",
+        "limit": 4
+      }
+    },
     "collecionpro_nchqKc": {
       "type": "collecionpro",
+      "disabled": true,
+      "custom_css": [],
       "name": "Tarjetas Alienware",
       "settings": {
         "collection_1": "gaming",
@@ -232,6 +247,7 @@
   },
   "order": [
     "hero5001_qCk8C9",
+    "coleccionmaestra_d3px78",
     "collecionpro_nchqKc",
     "product_list_fa6P9H"
   ]
