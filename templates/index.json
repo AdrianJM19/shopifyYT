@@ -176,7 +176,7 @@
         "section_width": "page-width",
         "section_height": "medium",
         "section_height_custom": 50,
-        "color_scheme": "scheme-6",
+        "color_scheme": "scheme-7cdc9774-8828-49ea-805a-c8a242011332",
         "toggle_overlay": true,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -376,7 +376,7 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-7cdc9774-8828-49ea-805a-c8a242011332",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
