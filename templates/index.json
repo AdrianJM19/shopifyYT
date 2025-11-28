@@ -313,11 +313,23 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "hero5001_qCk8C9": {
+      "type": "hero5001",
+      "name": "Hero Alienware",
+      "settings": {
+        "heading": "PORTÁTILES GAMING",
+        "subheading": "Rendimiento extremo para jugadores exigentes.",
+        "button_text_1": "VER PORTÁTILES",
+        "button_link_1": "",
+        "overlay_opacity": 40
+      }
     }
   },
   "order": [
     "1764310065358482d8",
     "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "product_list_fa6P9H",
+    "hero5001_qCk8C9"
   ]
 }
