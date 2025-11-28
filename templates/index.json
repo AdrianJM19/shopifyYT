@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "hero5001_qCk8C9": {
+      "type": "hero5001",
+      "name": "Hero Alienware",
+      "settings": {
+        "bg_image": "shopify://shop_images/Gemini_Generated_Image_x3s9f2x3s9f2x3s9.png",
+        "heading": "PORTÁTILES GAMING",
+        "subheading": "Rendimiento extremo para jugadores exigentes.",
+        "button_text_1": "VER PORTÁTILES",
+        "button_link_1": "",
+        "overlay_opacity": 40
+      }
+    },
     "1764310065358482d8": {
       "type": "_blocks",
       "settings": {
@@ -42,32 +54,6 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
-        "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>Browse our latest products</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "button_H9gpTf": {
           "type": "button",
           "name": "t:names.button",
@@ -85,7 +71,6 @@
         }
       },
       "block_order": [
-        "text_YLPk4p",
         "button_H9gpTf"
       ],
       "name": "t:names.hero",
@@ -313,23 +298,12 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
-    },
-    "hero5001_qCk8C9": {
-      "type": "hero5001",
-      "name": "Hero Alienware",
-      "settings": {
-        "heading": "PORTÁTILES GAMING",
-        "subheading": "Rendimiento extremo para jugadores exigentes.",
-        "button_text_1": "VER PORTÁTILES",
-        "button_link_1": "",
-        "overlay_opacity": 40
-      }
     }
   },
   "order": [
+    "hero5001_qCk8C9",
     "1764310065358482d8",
     "hero_jVaWmY",
-    "product_list_fa6P9H",
-    "hero5001_qCk8C9"
+    "product_list_fa6P9H"
   ]
 }
