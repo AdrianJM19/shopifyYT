@@ -634,7 +634,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".ai-tech-categories-grid-aykcxzlpyre5gsmjjqaigenblock68822dba9dap8 {grid-template-columns: repeat(3,1fr);}"
+      ".ai-tech-categories-grid-aykcxzlpyre5gsmjjqaigenblock68822dba9dap8 {grid-template-columns: repeat(3, 1fr); width: 100%}"
     ]
   }
 }
