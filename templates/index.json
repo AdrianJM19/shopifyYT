@@ -44,7 +44,7 @@
             "card_shadow_x": 0,
             "card_shadow_y": 6,
             "card_shadow_blur": 12,
-            "card_shadow_color": "#00000015",
+            "card_shadow_color": "#00000014",
             "image_aspect_ratio": 100,
             "image_fit": "contain",
             "image_background": "#f9f9f9",
@@ -363,8 +363,8 @@
       ],
       "custom_css": [
         ".resource-list__item,.card,.collection-card {border-radius: 20px !important; overflow: hidden !important;}",
-        " /* 1. Obligar a la caja a ocupar todo el ancho para poder centrarse */.text-block,rte-formatter,h3 {width: 100% !important; max-width: 100% !important; text-align: center !important;}",
-        " /* 2. Asegurar márgenes automáticos por si acaso */h3 {margin-left: auto !important; margin-right: auto !important;}"
+        ".text-block,rte-formatter,h3 {width: 100% !important; max-width: 100% !important; text-align: center !important;}",
+        "/h3 {margin-left: auto !important; margin-right: auto !important;}"
       ],
       "name": "t:names.collections_grid",
       "settings": {
@@ -374,7 +374,7 @@
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "columns": 2,
+        "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 22,
