@@ -4343,6 +4343,6 @@ text-component {
 #shopify-section-template--19850501292205__collection_list_3ec9yP .card:hover h3, 
 #shopify-section-template--19850501292205__collection_list_3ec9yP .card:hover .card__heading,
 #shopify-section-template--19850501292205__collection_list_3ec9yP .collection-card:hover .collection-card__title {
-  color: #ffffff !important;
+  color:rgb(6, 159, 255) !important;
   transition: color 0.3s ease !important;
 }
