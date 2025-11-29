@@ -363,7 +363,7 @@
       ],
       "custom_css": [
         ".resource-list__item,.card,.collection-card {border-radius: 20px !important; overflow: hidden !important;}",
-        ".text-block,rte-formatter,h3 {width: 100% !important; max-width: 100% !important; text-align: center !important;}",
+        ".text-block,rte-formatter,h3 {width: 100% !important; max-width: 100% !important; text-align: center !important; color: black;}",
         "/h3 {margin-left: auto !important; margin-right: auto !important;}"
       ],
       "name": "t:names.collections_grid",
