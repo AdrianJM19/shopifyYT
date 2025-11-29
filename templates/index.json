@@ -361,6 +361,9 @@
       "block_order": [
         "group_nJz3wj"
       ],
+      "custom_css": [
+        "/* 1. Redondear la tarjeta completa */.resource-list__item, .card, .collection-card {border-radius: 20px !important; /* Ajusta este número para más o menos curva */ /* EL SECRETO: Esto es OBLIGATORIO */ overflow: hidden !important; }"
+      ],
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
@@ -372,7 +375,7 @@
         "columns": 2,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
+        "columns_gap": 22,
         "bento_gap": 8,
         "rows_gap": 8,
         "max_collections": 4,
