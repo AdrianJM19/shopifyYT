@@ -372,9 +372,10 @@
         "collection_list": [
           "gaming",
           "productividad",
-          "perifericos"
+          "perifericos",
+          "monitores"
         ],
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
         "columns": 3,
         "mobile_columns": "2",
