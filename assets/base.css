@@ -4346,3 +4346,7 @@ text-component {
   color:rgb(6, 159, 255) !important;
   transition: color 0.3s ease !important;
 }
+
+h4{
+  font-weight: bold !important;
+}
