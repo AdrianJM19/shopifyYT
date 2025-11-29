@@ -4316,7 +4316,7 @@ text-component {
 
 /* 3. Aparece la sombra en la tarjeta */
 .card:hover, .collection-card:hover, .resource-list__item:hover {
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important; /* Sombra negra difuminada */
+  box-shadow: 0 15px 40px rgba(11, 38, 213, 0.3) !important; /* Sombra negra difuminada */
 }
 
 /* 4. La imagen crece (Zoom) */
