@@ -4353,3 +4353,7 @@ a[href*="acer-nitro"] span {
   font-weight: 800 !important; /* Negrita */
   text-transform: uppercase;
 }
+
+a[href*="acer-nitro"] span:hover {
+  color: rgb(0,0,0);
+}
