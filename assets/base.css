@@ -4352,7 +4352,7 @@ text-component {
 
 
 /* Seleccionamos los títulos H3 dentro de TU sección específica */
-#shopify-section-template--19850501292205__collection_list_3ec9yP h3, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP h4, 
 #shopify-section-template--19850501292205__collection_list_3ec9yP .card__heading {
   font-weight: 800 !important; /* 800 es "Extra Bold" */
   font-family: sans-serif !important; /* Asegura una fuente limpia */
