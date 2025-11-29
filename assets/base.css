@@ -4330,3 +4330,19 @@ text-component {
 #shopify-section-template--19850501292205__collection_list_3ec9yP .resource-list__item:hover img {
   transform: scale(1.1) !important;
 }
+/* --- EFECTO HOVER EN EL TÍTULO (Cajita blanca) --- */
+
+/* 1. Cambiar el fondo de la cajita al pasar el mouse */
+#shopify-section-template--19850501292205__collection_list_3ec9yP .card:hover .card__content, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .collection-card:hover .card__content {
+  background-color: #005bd3 !important; /* Azul eléctrico (cámbialo si prefieres morado) */
+  transition: background-color 0.3s ease !important;
+}
+
+/* 2. Cambiar el color del texto a blanco para que se lea */
+#shopify-section-template--19850501292205__collection_list_3ec9yP .card:hover h3, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .card:hover .card__heading,
+#shopify-section-template--19850501292205__collection_list_3ec9yP .collection-card:hover .collection-card__title {
+  color: #ffffff !important;
+  transition: color 0.3s ease !important;
+}
