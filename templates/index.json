@@ -137,6 +137,7 @@
         },
         "text_eM3hMz": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Made with care and unconditionally loved by our customers.</p>",
             "width": "fit-content",
@@ -182,7 +183,7 @@
         "button_zzxEnQ"
       ],
       "custom_css": [
-        "h1{font-weight: bold;}"
+        "h1 {font-weight: bold;}"
       ],
       "name": "t:names.hero",
       "settings": {
