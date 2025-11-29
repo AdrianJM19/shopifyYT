@@ -4321,7 +4321,7 @@ text-component {
 #shopify-section-template--19850501292205__collection_list_3ec9yP .collection-card:hover, 
 #shopify-section-template--19850501292205__collection_list_3ec9yP .resource-list__item:hover {
   transform: translateY(-10px) !important; 
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important; 
+  box-shadow: 0 20px 40px rgba(0, 217, 255, 0.3) !important; 
   z-index: 2; /* Para que sobresalga */
 }
 
