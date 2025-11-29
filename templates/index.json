@@ -181,6 +181,9 @@
         "text_eM3hMz",
         "button_zzxEnQ"
       ],
+      "custom_css": [
+        "h1{font-weight: bold;}"
+      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "video",
