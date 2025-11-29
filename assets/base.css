@@ -4298,4 +4298,35 @@ text-component {
 }
 
 
+/* ==========================================================
+   ESTILOS ESPECÍFICOS PARA LA SECCIÓN DE COLECCIONES (ID ÚNICO)
+   ========================================================== */
 
+/* 1. EL CONTENEDOR (Tarjeta) - Solo dentro de esta sección */
+#shopify-section-template--19850501292205__collection_list_3ec9yP .card, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .collection-card, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .resource-list__item {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* 2. LA IMAGEN (Zoom) */
+#shopify-section-template--19850501292205__collection_list_3ec9yP img {
+  transition: transform 0.6s ease !important;
+}
+
+/* --- HOVER (Interacción) --- */
+#shopify-section-template--19850501292205__collection_list_3ec9yP .card:hover, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .collection-card:hover, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .resource-list__item:hover {
+  transform: translateY(-10px) !important; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important; 
+  z-index: 2; /* Para que sobresalga */
+}
+
+#shopify-section-template--19850501292205__collection_list_3ec9yP .card:hover img, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .collection-card:hover img, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .resource-list__item:hover img {
+  transform: scale(1.1) !important;
+}
