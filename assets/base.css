@@ -4320,7 +4320,7 @@ text-component {
   transform: translateY(-10px) !important; 
   
   /* Sombra más profunda para dar sensación de altura */
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important; 
+  box-shadow: 0 20px 40px rgba(5, 184, 255, 0.3) !important; 
 }
 
 /* 4. Zoom Imagen */
