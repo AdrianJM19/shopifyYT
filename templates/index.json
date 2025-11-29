@@ -9,49 +9,6 @@
  */
 {
   "sections": {
-    "hero5001_qCk8C9": {
-      "type": "hero5001",
-      "name": "Hero Alienware",
-      "settings": {
-        "bg_image": "shopify://shop_images/Gemini_Generated_Image_iajgd3iajgd3iajg.png",
-        "heading": "PORTÁTILES GAMING",
-        "subheading": "Rendimiento extremo para jugadores exigentes.",
-        "button_text_1": "VER PORTÁTILES",
-        "button_link_1": "shopify://collections/gaming",
-        "overlay_opacity": 45
-      }
-    },
-    "coleccionmaestra_d3px78": {
-      "type": "coleccionmaestra",
-      "disabled": true,
-      "name": "Alienware Master Tab",
-      "settings": {
-        "title_1": "AREA-51",
-        "desc_1": "Rendimiento extremo.",
-        "collection_1": "gaming",
-        "color_1": "#3b0087",
-        "title_2": "AURORA",
-        "desc_2": "Versatilidad total.",
-        "collection_2": "productividad",
-        "color_2": "#000000",
-        "limit": 4
-      }
-    },
-    "collecionpro_nchqKc": {
-      "type": "collecionpro",
-      "custom_css": [],
-      "name": "Tarjetas Alienware",
-      "settings": {
-        "collection_1": "gaming",
-        "title_1": "GAMING",
-        "desc_1": "La experiencia gaming definitiva.",
-        "color_1": "#240090",
-        "collection_2": "productividad",
-        "title_2": "PRODUCTIVIDAD",
-        "desc_2": "Versatilidad para gaming de primer nivel.",
-        "color_2": "#111111"
-      }
-    },
     "17643592345c6828c8": {
       "type": "_blocks",
       "blocks": {
@@ -118,6 +75,7 @@
       "block_order": [
         "ai_gen_block_de9720c_b3NVNW"
       ],
+      "disabled": true,
       "custom_css": [
         ".ai-product-carousel__title-azwznagxheuxutefrmaigenblockde9720cb3nvnw {font-size: 32px; color: #000000; margin: 0 0 30px; font-weight: bold;}"
       ],
@@ -148,12 +106,117 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "hero_HnGNqc": {
+      "type": "hero",
+      "blocks": {
+        "text_mxKw4J": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>New arrivals</h1>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_eM3hMz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Made with care and unconditionally loved by our customers.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_zzxEnQ": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_mxKw4J",
+        "text_eM3hMz",
+        "button_zzxEnQ"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/Gemini_Generated_Image_iajgd3iajgd3iajg.png",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "large",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
     }
   },
   "order": [
-    "hero5001_qCk8C9",
-    "coleccionmaestra_d3px78",
-    "collecionpro_nchqKc",
-    "17643592345c6828c8"
+    "17643592345c6828c8",
+    "hero_HnGNqc"
   ]
 }

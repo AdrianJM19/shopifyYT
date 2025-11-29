@@ -14,29 +14,6 @@
     "section_ADb3Pc": {
       "type": "section",
       "blocks": {
-        "video_iatnnw": {
-          "type": "video",
-          "name": "t:names.video",
-          "settings": {
-            "source": "uploaded",
-            "video": "shopify://files/videos/Video_de_Laptops_Gaming_Azul.mp4",
-            "video_autoplay": true,
-            "video_loop": true,
-            "alt": "",
-            "custom_width": 86,
-            "custom_width_mobile": 100,
-            "aspect_ratio": "16/9",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_aYPd6f": {
           "type": "group",
           "name": "t:names.caption",
@@ -126,7 +103,6 @@
         }
       },
       "block_order": [
-        "video_iatnnw",
         "group_aYPd6f"
       ],
       "name": "t:names.video_section",
