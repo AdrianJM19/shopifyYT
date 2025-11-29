@@ -4349,7 +4349,7 @@ text-component {
 
 /* Selecciona el link (a) cuyo destino (href) contiene la palabra "acer-nitro" */
 a[href*="acer-nitro"] span {
-  color: #ff0000 !important; /* Rojo Oferta */
+  color:rgb(0, 106, 255) !important; /* Rojo Oferta */
   font-weight: 800 !important; /* Negrita */
   text-transform: uppercase;
 }
