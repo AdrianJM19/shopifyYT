@@ -4354,3 +4354,23 @@ a[href*="acer-nitro"] span {
   text-transform: uppercase;
 }
 
+/* 1. PREPARACIÓN (Base) */
+a[href*="acer-nitro"] span {
+  /* OBLIGATORIO: Para que el texto pueda crecer/rotar */
+  display: inline-block !important; 
+  
+  /* Transición con efecto "rebote" (bouncy) para que se sienta juguetón */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+/* 2. LA ACCIÓN (Hover) */
+a[href*="acer-nitro"]:hover span {
+  /* Crece un 20% y se inclina un poquito a la izquierda (estilo etiqueta de oferta) */
+  transform: scale(1.2) rotate(-5deg) !important;
+  
+  /* Agregamos un brillo rojo difuso alrededor de las letras */
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.6) !important;
+  
+  /* Aseguramos que el color rojo se mantenga vivo */
+  color: #ff2222 !important;
+}
