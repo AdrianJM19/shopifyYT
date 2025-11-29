@@ -4299,27 +4299,31 @@ text-component {
 
 
 
-
-/* 1. Base de la tarjeta (Necesario para que el zoom no se salga de las esquinas) */
+/* 1. EL CONTENEDOR (Tarjeta) */
 .card, .collection-card, .resource-list__item {
-  border-radius: 20px !important; /* Mantiene tus bordes redondos */
-  overflow: hidden !important;    /* CLAVE: Evita que la imagen se salga al crecer */
-  transition: box-shadow 0.3s ease !important; /* Suaviza la aparición de la sombra */
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  /* Agregamos 'transform' a la transición para que la subida sea suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-/* 2. La Imagen por dentro (Prepara el zoom suave) */
+/* 2. LA IMAGEN (Zoom) */
 .card img, .collection-card img, .resource-list__item img {
-  transition: transform 0.6s ease !important; /* El zoom será lento y elegante */
+  transition: transform 0.6s ease !important;
 }
 
-/* --- AL PASAR EL MOUSE (HOVER) --- */
+/* --- HOVER (Interacción) --- */
 
-/* 3. Aparece la sombra en la tarjeta */
+/* 3. Levantar + Sombra */
 .card:hover, .collection-card:hover, .resource-list__item:hover {
-  box-shadow: 0 15px 40px rgba(4, 37, 255, 0.3) !important; /* Sombra negra difuminada */
+  /* AQUÍ ESTÁ EL EFECTO DE LEVANTAR */
+  transform: translateY(-10px) !important; 
+  
+  /* Sombra más profunda para dar sensación de altura */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important; 
 }
 
-/* 4. La imagen crece (Zoom) */
+/* 4. Zoom Imagen */
 .card:hover img, .collection-card:hover img, .resource-list__item:hover img {
-  transform: scale(1.1) !important; /* Aumenta un 10% su tamaño */
+  transform: scale(1.1) !important;
 }
