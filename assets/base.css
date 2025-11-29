@@ -4296,59 +4296,76 @@ text-component {
     font-size: max(1rem, 100%);
   }
 }
-/* ==============================================
-   MIS ESTILOS PERSONALIZADOS (ALIENWARE CARDS)
-   ============================================== */
 
-/* --- 1. ESTILOS DE ESCRITORIO (PC) --- */
+
+
+/* 1. CONTENEDOR PRINCIPAL (La fila) */
 .resource-list, .grid, .collection-list-section {
   display: flex !important;
   justify-content: center !important;
-  flex-wrap: wrap !important;
   gap: 20px !important;
+  padding: 0 !important;      /* Quita rellenos del contenedor */
+  margin: 0 auto !important;  /* Centrado en la página */
+  max-width: 1200px !important;
 }
 
-/* Las tarjetas ocupan el 30% aprox (3 por fila) */
-.resource-list__item, .grid__item, .collection-card, .card {
-  width: 30% !important; 
+/* 2. LA TARJETA (El elemento individual) */
+.resource-list__item, .collection-card, .card {
+  width: 32% !important;      /* Un poco más ancho para aprovechar espacio */
   min-width: 300px !important;
-  flex-grow: 0 !important;
+  margin: 0 !important;       /* Elimina márgenes extraños del tema */
+  padding: 0 !important;      /* ELIMINA EL ESPACIO GRIS INTERNO */
+  border: none !important;    /* Quita bordes grises si los hay */
+  background: transparent !important; /* Quita el fondo gris de "sobra" */
+  
   border-radius: 20px !important;
   overflow: hidden !important;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  margin-bottom: 0 !important; /* Reseteo de márgenes */
+  transition: all 0.4s ease !important;
 }
 
-/* Efecto Hover (Levantar y Sombra) */
-.resource-list__item:hover, .collection-card:hover, .card:hover {
+/* 3. LA IMAGEN (Obligarla a llenar todo el hueco) */
+.card__inner, .card__media, .media, .collection-card__image-wrapper {
+  width: 100% !important;     /* OBLIGATORIO: Llena el ancho de la tarjeta */
+  height: 350px !important;   /* Altura fija para uniformidad */
+  padding: 0 !important;      /* Cero padding interno */
+  margin: 0 !important;
+}
+
+.card__media img, .media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Rellena sin deformar */
+  object-position: center !important;
+}
+
+/* 4. EL TEXTO (Botón blanco abajo) */
+.card__content, .card__information {
+  /* Si el texto se ve raro, esto lo ajusta */
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* 5. EFECTO HOVER (El movimiento bonito) */
+.resource-list__item:hover, .collection-card:hover {
   transform: translateY(-10px) !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25) !important;
-  z-index: 2;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
 }
 
-/* Efecto Zoom en Imagen */
-.resource-list__item:hover img, .collection-card:hover img, .card:hover img {
+.resource-list__item:hover img, .collection-card:hover img {
   transform: scale(1.1) !important;
   transition: transform 0.6s ease !important;
 }
 
-/* --- 2. VERSIÓN MÓVIL (RESPONSIVE) --- */
-/* Esto se activa solo si la pantalla es menor a 768px (Tablets y Celulares) */
+/* 6. MÓVIL (Responsivo) */
 @media (max-width: 768px) {
-  
-  .resource-list, .grid, .collection-list-section {
-    flex-direction: column !important; /* Apilar una encima de otra */
-    align-items: center !important;    /* Centradas */
+  .resource-list, .grid {
+    flex-direction: column !important;
+    align-items: center !important;
   }
-
-  .resource-list__item, .grid__item, .collection-card, .card {
-    width: 100% !important;      /* Que ocupen todo el ancho del celular */
-    max-width: 400px !important; /* Pero que no sean gigantes si el cel es muy ancho */
-    margin-bottom: 25px !important; /* Espacio generoso entre tarjeta y tarjeta */
-  }
-
-  /* Opcional: En móvil suavizamos el "Levantar" porque no hay mouse */
-  .resource-list__item:hover, .collection-card:hover, .card:hover {
-    transform: translateY(-5px) !important; /* Se mueve menos para no molestar el scroll */
+  .resource-list__item, .collection-card {
+    width: 100% !important;
+    max-width: 400px !important;
+    margin-bottom: 20px !important;
   }
 }
