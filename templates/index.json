@@ -370,7 +370,8 @@
       "settings": {
         "collection_list": [
           "gaming",
-          "productividad"
+          "productividad",
+          "perifericos"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
