@@ -4347,3 +4347,17 @@ text-component {
   transition: color 0.3s ease !important;
 }
 
+
+//*hoy loco
+
+
+/* Seleccionamos los títulos H3 dentro de TU sección específica */
+#shopify-section-template--19850501292205__collection_list_3ec9yP h3, 
+#shopify-section-template--19850501292205__collection_list_3ec9yP .card__heading {
+  font-weight: 800 !important; /* 800 es "Extra Bold" */
+  font-family: sans-serif !important; /* Asegura una fuente limpia */
+  letter-spacing: 0.5px !important; /* Un poco de aire entre letras */
+  
+  /* Truco Pro: Sombra de texto para contraste máximo */
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
+}
