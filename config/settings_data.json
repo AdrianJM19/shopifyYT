@@ -714,11 +714,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".ai-tech-categories-grid-aykcxzlpyre5gsmjjqaigenblock68822dba9dap8 {grid-template-columns: repeat(3, 1fr); width: 100%;}",
-      "/* 1. Posicionamiento General de los Botones */.slider-button, .swiper-button-next, .swiper-button-prev {position: absolute !important; /* Se mueven libremente */ top: 50% !important; /* Centrados verticalmente */ transform: translateY(-50%) !important; z-index: 10 !important; /* Siempre encima de todo */ /* Estilo visual (opcional: hazlos un poco transparentes) */ opacity: 0.9 !important; background-color: rgba(255, 255, 255, 0.9) !important; /* Fondo blanco casi sólido */ border: 1px solid #eee !important; box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important; /* Sombra para que floten */}",
-      "/* 2. Flecha IZQUIERDA -> Pegada al borde izquierdo */.slider-button--prev, .swiper-button-prev {left: 10px !important; /* A 10px del borde izquierdo */ right: auto !important; /* Anula cualquier otra regla */}",
-      "/* 3. Flecha DERECHA -> Pegada al borde derecho */.slider-button--next, .swiper-button-next {right: 10px !important; /* A 10px del borde derecho */ left: auto !important; /* Anula cualquier otra regla */}",
-      "/* 4. (Opcional) Ocultar el estado inactivo para que no estorbe */.slider-button[disabled] {display: none !important;}"
+      ".ai-tech-categories-grid-aykcxzlpyre5gsmjjqaigenblock68822dba9dap8 {grid-template-columns: repeat(3, 1fr); width: 100%;}"
     ]
   }
 }
