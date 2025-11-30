@@ -377,11 +377,11 @@
           "escritorios",
           "sillas-gaming"
         ],
-        "layout_type": "carousel",
+        "layout_type": "bento",
         "carousel_on_mobile": false,
-        "columns": 2,
+        "columns": 3,
         "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
+        "mobile_card_size": "44cqw",
         "columns_gap": 22,
         "bento_gap": 8,
         "rows_gap": 8,
@@ -512,7 +512,6 @@
           ]
         }
       },
-      "disabled": true,
       "name": "t:names.editorial_jumbo_text",
       "settings": {
         "media_position": "right",
@@ -642,7 +641,6 @@
           ]
         }
       },
-      "disabled": true,
       "name": "t:names.editorial_jumbo_text",
       "settings": {
         "media_position": "left",
@@ -772,7 +770,6 @@
           ]
         }
       },
-      "disabled": true,
       "name": "t:names.editorial_jumbo_text",
       "settings": {
         "media_position": "right",
