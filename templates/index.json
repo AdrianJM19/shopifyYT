@@ -536,7 +536,8 @@
         "group_DE4Hbh"
       ],
       "custom_css": [
-        "h3 {text-align: center;}"
+        ".text-block {width: 100% !important; max-width: 100% !important; text-align: center !important;}",
+        ".text-block h3 {text-align: center !important; margin-left: auto !important; margin-right: auto !important; width: 100% !important;}"
       ],
       "name": "t:names.collections_grid",
       "settings": {
