@@ -512,6 +512,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.editorial_jumbo_text",
       "settings": {
         "media_position": "right",
@@ -641,6 +642,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.editorial_jumbo_text",
       "settings": {
         "media_position": "left",
@@ -770,6 +772,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.editorial_jumbo_text",
       "settings": {
         "media_position": "right",
