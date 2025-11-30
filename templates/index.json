@@ -373,7 +373,9 @@
           "gaming",
           "productividad",
           "perifericos",
-          "monitores"
+          "monitores",
+          "escritorios",
+          "sillas-gaming"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
