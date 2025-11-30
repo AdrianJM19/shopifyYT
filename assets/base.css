@@ -4374,7 +4374,3 @@ a[href*="acer-nitro"]:hover span {
   /* Aseguramos que el color rojo se mantenga vivo */
   color: #ff2222 !important;
 }
-
-.menu-list__link-title{
-   text-transform: uppercase !important;
-}
