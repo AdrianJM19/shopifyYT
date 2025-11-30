@@ -424,12 +424,12 @@
               "name": "t:names.jumbo_text",
               "settings": {
                 "text": "BLACKSHARK\nV2PRO",
-                "font": "heading",
-                "alignment": "right",
+                "font": "accent",
+                "alignment": "center",
                 "line_height": "0.8",
                 "letter_spacing": "-0.03em",
                 "case": "uppercase",
-                "text_effect": "none",
+                "text_effect": "reveal",
                 "animation_repeat": false
               },
               "blocks": {}
