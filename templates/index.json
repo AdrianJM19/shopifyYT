@@ -401,8 +401,8 @@
         "text_zfpqxc": {
           "type": "text",
           "settings": {
-            "text": "<p>We make things that work better and last longer.</p>",
-            "width": "fit-content",
+            "text": "<p><strong>Descuento para estudiantes 10%</strong></p>",
+            "width": "100%",
             "max_width": "normal",
             "alignment": "left",
             "type_preset": "custom",
@@ -429,10 +429,10 @@
       ],
       "name": "t:names.marquee_section",
       "settings": {
-        "movement_direction": "normal",
-        "color_scheme": "scheme-4",
-        "padding-block-start": 24,
-        "padding-block-end": 24,
+        "movement_direction": "reverse",
+        "color_scheme": "scheme-3",
+        "padding-block-start": 9,
+        "padding-block-end": 10,
         "gap_between_elements": 24
       }
     },
